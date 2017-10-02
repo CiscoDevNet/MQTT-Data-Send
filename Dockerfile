@@ -5,10 +5,6 @@ RUN apk update
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-COPY app.py .
-COPY templates .
-COPY static .
+COPY mqtt_forward.py .
 
-EXPOSE 5656
-
-CMD ["python", "app.py"]
+CMD ["python", "minio-test.py"]
