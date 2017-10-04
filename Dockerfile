@@ -7,4 +7,4 @@ RUN pip install -r requirements.txt
 
 COPY mqtt_forward.py .
 
-CMD ["python", "minio-forward.py"]
+CMD ["python", "minio_forward.py"]
